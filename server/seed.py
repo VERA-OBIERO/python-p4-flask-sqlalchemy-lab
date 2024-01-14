@@ -24,7 +24,7 @@ with app.app_context():
     db.session.add_all(zookeepers)
 
     enclosures = []
-    environments = ['Desert', 'Pond', 'Ocean', 'Field', 'Trees', 'Cave', 'Cage']
+    environments = ['grass', 'sand', 'water']
 
     for n in range(25):
         e = Enclosure(environment=rc(environments), open_to_visitors=rc([True, False]))
